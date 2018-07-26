@@ -1,0 +1,23 @@
+@mixin bubble-color {
+    &--orange{
+        background-color: var(--orange);
+    }
+    &--green{
+        background-color: var(--green);
+    }
+}
+
+.bubble{
+    padding: 10px 30px;
+    border-radius: 14px;
+    color: #fff !important;
+    &__right{
+        border-bottom-left-radius: 0px !important;
+        @include bubble-color;
+    }
+
+    &__left{
+        border-bottom-right-radius: 0px !important;
+        @include bubble-color;
+    }
+}

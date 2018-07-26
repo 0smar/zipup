@@ -1,0 +1,34 @@
+/* FONTS */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,700');
+
+/* VARIABLES */
+
+:root {
+    --orange: #f6a51f;
+    --green: #a4c33e;
+    --light-green: #b2c953;
+    --text: #212121;
+    --gray: #d8d8d8;
+    --light-gray: #e0e0e0;
+}
+
+/* IMPORTS */
+
+@import 'components/buttons';
+@import 'components/containers';
+@import 'components/section-1';
+@import 'components/section-2';
+@import 'components/section-3';
+@import 'components/section-4';
+@import 'components/section-5';
+@import 'components/section-6';
+
+/* STYLES */ 
+
+body{
+    font-family: 'Roboto', sans-serif;
+    color: var(--text);
+    position: relative;
+    overflow: hidden;
+}
