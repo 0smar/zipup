@@ -83,7 +83,7 @@ const IndexPage = () => (
         <img src={mockup} alt="ZipUp imagen de aplicación móvil" className="mock" />
       </div>
     </div>
-    <div className="about-section">
+    <div className="about-section" id="conocenos">
       <img src={orangeblob} alt="orange figure" className="orange-blob" />
       <h2>¿Qué es ZipUp?</h2>
       <p>Somos la aplicación que te ayudará a llevar una vida sana y encontrar un balance en tu día a día. Nuestra asistente inteligente, Sofi, te dará recomendaciones en base a tu estilo de vida y a lo que hayas comido durante el día. Todo para seguir con tus metas. </p>
@@ -108,7 +108,7 @@ const IndexPage = () => (
         </div>
       </div>
     </div>
-    <div className="sofi-section">
+    <div className="sofi-section" id="sofi">
       <img src={sofibg} className="faces-bg" />
       <div className="sofi-faces">
         <img src={sofis} alt="Emociones de Sofi" />
@@ -127,7 +127,7 @@ const IndexPage = () => (
         </ul>
       </div>
     </div>
-    <div className="demo-section">
+    <div className="demo-section" id="demo">
       <img src={orangecircle} className="orange-circle" alt="Círculo Naranja" />
       <div className="demo-container">
         <img src={mockup} className="mockup" alt="Demo de ZipUp" />
@@ -139,7 +139,7 @@ const IndexPage = () => (
         </div>
       </div>
     </div>
-    <div className="press-section">
+    <div className="press-section" id="prensa">
       <p>
         ZipUp te enseñará a llevar una vida saludable. Y ellos lo saben.
       </p>
@@ -170,7 +170,7 @@ const IndexPage = () => (
         </div>
       </div>
     </div>
-    <div className="register-section">
+    <div className="register-section" id="comienza">
       <div className="invite">
         <img src={sofi} alt="Sofi te invita" />
         <div class="header">

@@ -8,6 +8,8 @@ import Footer from '../components/footer';
 import './index.scss';
 import '../styles/main.scss';
 
+import favicon from '../images/favicon.png'
+
 const YieldContent = styled.div`
   display: flex;
   flex-direction: column;
@@ -23,6 +25,9 @@ const Layout = ({ children, data }) => (
       meta={[
         { name: 'description', content: 'Sample' },
         { name: 'keywords', content: 'sample, something' },
+      ]}
+      link={[
+        { rel: 'shortcut icon', type: 'image/png', href: `${favicon}` }
       ]}
     />
     <Header siteTitle={data.site.siteMetadata.title} />
