@@ -183,8 +183,12 @@ const IndexPage = () => (
         </div>
       </div>
       <div className="newsletter">
-        <input type="text" placeholder="Ingresa tu correo electrónico"/>
-        <input type="submit" value="Regístrate" />
+        <form name="contact" method="POST" netlify>
+          <input type="text" name="email" placeholder="Ingresa tu correo electrónico" />
+          <button type="submit">Enviar</button>
+          
+        </form>
+        
       </div>
     </div>
   </div>

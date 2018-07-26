@@ -28,6 +28,10 @@
         padding: 80px 100px;
         margin: 0 auto;
         background-color: rgba(246, 165, 31, 0.4);
+        form{
+            display: flex;
+            width: 90%;
+        }
         input[type=text]{
             padding: 1em;
             width: 100%;
@@ -36,7 +40,7 @@
             border-top-left-radius: 40px;
             border-bottom-left-radius: 40px;
         }
-        input[type=submit]{
+        button{
             padding: 1em 2.5em;
             background-color: var(--green);
             border: none;
