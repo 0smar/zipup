@@ -50,27 +50,28 @@ const ImportantLinks = styled.div`
 `
 
 const Footer = ({ siteTitle }) => (
-    <FooterWrapper>
-        <SocialMedia>
-            <Link to="/">
-                <img src={Twitter} alt="ZipUp Twitter" />
-            </Link>
-            <Link to="/">
-                <img src={Instagram} alt="ZipUp Instragram" />
-            </Link>
-            <Link to="/">
-                <img src={Linkedin} alt="ZipUp Linkedin" />
-            </Link>
-        </SocialMedia>
-
-        <ImportantLinks>
-            <Link>Términos y Condiciones</Link>
-            <Link>Aviso de Privacidad</Link>
-            <br/>
-            <br/>
-            <img src={Logo} alt="ZipUp Logo" className="footer-logo" />
-        </ImportantLinks>
-    </FooterWrapper>
+  <FooterWrapper>
+    <ImportantLinks>
+      <img src={Logo} alt="ZipUp Logo" className="footer-logo" />
+    </ImportantLinks>
+    <br />
+    <SocialMedia>
+      <Link to="/">
+        <img src={Twitter} alt="ZipUp Twitter" />
+      </Link>
+      <Link to="/">
+        <img src={Instagram} alt="ZipUp Instragram" />
+      </Link>
+      <Link to="/">
+        <img src={Linkedin} alt="ZipUp Linkedin" />
+      </Link>
+    </SocialMedia>
+    <br />
+    <ImportantLinks>
+      <Link>Términos y Condiciones</Link>
+      <Link>Aviso de Privacidad</Link>
+    </ImportantLinks>
+  </FooterWrapper>
 )
 
 export default Footer

@@ -23,6 +23,7 @@
 @import 'components/section-4';
 @import 'components/section-5';
 @import 'components/section-6';
+@import 'components/footer';
 
 /* STYLES */ 
 
@@ -31,4 +32,9 @@ body{
     color: var(--text);
     position: relative;
     overflow: hidden;
+}
+
+.green{
+  color: var(--green);
+  font-size: 30px;
 }

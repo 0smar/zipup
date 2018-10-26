@@ -3,8 +3,13 @@ import Link from 'gatsby-link'
 import styled from 'styled-components'
 
 import greenblob from '../images/green-blob.svg'
-import mockup from '../images/phone-mock.png'
+import mockup from '../images/dark.png'
 import sofi from '../images/sofi.png'
+import sofigif from '../images/sophie.gif'
+
+import Twitter from '../images/twitter.svg'
+import Instagram from '../images/instagram.svg'
+import Linkedin from '../images/linked.svg'
 
 import orangeblob from '../images/orange-blob.svg'
 import chaticon from '../images/icon-1.svg'
@@ -15,6 +20,7 @@ import sofibg from '../images/sofi-bg.svg'
 import sofis from '../images/sofis.png'
 
 import orangecircle from '../images/orange-circle.svg'
+import circleBg from '../images/circle-bg.svg'
 
 import cnn from '../images/cnn.png'
 import milenio from '../images/milenio.png'
@@ -87,14 +93,27 @@ const IndexPage = () => (
           <Link>Habla con Sofi</Link>
           <Link>Regístrate</Link>
         </ActionButtons>
+        <div className="social-media">
+          <Link to="/">
+            <img src={Twitter} alt="ZipUp Twitter" />
+          </Link>
+          <Link to="/">
+            <img src={Instagram} alt="ZipUp Instragram" />
+          </Link>
+          <Link to="/">
+            <img src={Linkedin} alt="ZipUp Linkedin" />
+          </Link>
+        </div>
       </div>
       <div className="mockup">
-        <img src={sofi} alt="Sofi, tu asistente nutricional" className="sofi" />
+        &nbsp;
+        <img src={sofigif} alt="Sofi, tu asistente nutricional" className="sofi" />
         <img src={mockup} alt="ZipUp imagen de aplicación móvil" className="mock" />
       </div>
     </div>
     <div className="about-section" id="conocenos">
       <img src={orangeblob} alt="orange figure" className="orange-blob" />
+      
       <h2>¿Qué es ZipUp?</h2>
       <p>Somos la aplicación que te ayudará a llevar una vida sana y encontrar un balance en tu día a día. Nuestra asistente inteligente, Sofi, te dará recomendaciones en base a tu estilo de vida y a lo que hayas comido durante el día. Todo para seguir con tus metas. </p>
       <div className="steps-grid">
@@ -115,6 +134,17 @@ const IndexPage = () => (
           <p>
             Sigue tu progreso y aprende a llevar una vida saludable y sin reestricciones.
           </p>
+        </div>
+      </div>
+      <div className="video-section">
+        <div className="description">
+          <img src={circleBg} alt="" className="circle-bg"/>
+          <h2 className="green">¡Cambia tu vida con ZipUp!</h2>
+        </div>
+        <div className="video-container">
+          <iframe width="520" height="315"
+            src="https://www.youtube.com/embed/tgbNymZ7vqY">
+          </iframe>
         </div>
       </div>
     </div>
@@ -151,8 +181,8 @@ const IndexPage = () => (
     </div>
     <div className="press-section" id="prensa">
       <h2>
-        ZipUp te enseñará a llevar una vida saludable. Y ellos lo saben.
-    </h2>
+        Ellos ya nos conocen. ¿Y tú, qué esperas para cambiar tu vida?
+      </h2>
       <div className="press-grid">
 
           <div className="press hvr">
@@ -231,26 +261,6 @@ const IndexPage = () => (
             </a>
         </div>
 
-
-      </div>
-    </div>
-    <div className="register-section" id="comienza">
-      <div className="invite">
-        <img src={sofi} alt="Sofi te invita" />
-        <div class="header">
-          <div className="bubble bubble__right bubble__right--orange">
-            ¿Listo para cambiar tu vida?
-          </div>
-          <p>
-            Regístrate en nuestro boletín y recibe las últimas noticias sobre ZipUp además de tips que te ayudarán a tener una vida más sana.
-          </p>
-        </div>
-      </div>
-      <div className="newsletter">
-        <form name="contact" method="POST" data-netlify="true">
-          <input type="email" name="email" placeholder="Ingresa tu correo electrónico" />
-          <button type="submit">Enviar</button>
-        </form>
 
       </div>
     </div>

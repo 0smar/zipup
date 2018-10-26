@@ -4,6 +4,7 @@ import Helmet from 'react-helmet';
 import styled from 'styled-components'
 
 import Header from '../components/header';
+import Newsletter from '../components/newsletter';
 import Footer from '../components/footer';
 import './index.scss';
 import '../styles/main.scss';
@@ -34,6 +35,7 @@ const Layout = ({ children, data }) => (
     <YieldContent>
       {children()}
     </YieldContent>
+    <Newsletter />
     <Footer />
   </div>
 )
