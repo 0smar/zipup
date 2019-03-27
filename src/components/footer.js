@@ -6,7 +6,6 @@ import Logo from '../images/logo.png'
 import Twitter from '../images/twitter.svg'
 import Instagram from '../images/instagram.svg'
 import Facebook from '../images/facebook.svg'
-import Linkedin from '../images/linked.svg'
 
 const FooterWrapper = styled.div`
   display: flex;
@@ -115,4 +114,4 @@ const Footer = () => (
   </FooterWrapper>
 )
 
-export default Footer
+export default Footer;
