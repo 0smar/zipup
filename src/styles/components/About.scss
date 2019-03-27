@@ -1,0 +1,145 @@
+.about-section{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  min-height: 100vh;
+  align-items: center;
+  padding-top: 20vh;
+  justify-content: center;
+  .description{
+    width: 60%;
+    align-self: flex-end;
+    h1{
+      text-align: right;
+    }
+    p{
+      width: 100%;
+      margin: 0 auto;
+      text-align: right;
+    }
+    .steps-grid{
+      width: 100%;
+      margin: 0 auto;
+      margin-top: 6em;
+      display: grid;
+      grid-gap: 20px;
+      grid-template-columns: 0.30fr 0.30fr 0.30fr;
+      justify-content: flex-end;
+      .step{
+        img{
+          height: 40px;
+          margin-bottom: 10px;
+        }
+        .heart-icon{
+          height: auto;
+          width: 40px;
+          margin-bottom: 15px;
+        }
+        p{
+          width: 100%;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+.video-section{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3em; 
+  padding-top: 10em;
+  position: relative;
+  .pattern-video{
+    width: 100%;
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+    z-index: -1;
+  }
+  .video-container{
+    width: 560px;
+    height: 315px;
+    margin: 0 auto;
+    iframe{
+      margin: 0 auto;
+      border: none;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.orange-blob{
+    position: absolute;
+    left: -15%;
+    top: -20vh;
+    width: 300px;
+    z-index: -1;
+}
+
+@media only screen and (max-width: 1024px){
+  .about-section{
+    .description{
+      width: 100%;
+      p{
+        width: 50%;
+        margin-bottom: 4em;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px){
+  .about-section{
+    .description{
+      width: 100%;
+      p{
+        width: 70%;
+        float: right;
+        margin-bottom: 4em;
+      }
+      .steps-grid{
+        justify-content: center;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 550px){
+    .about-section{
+        min-height: 100vh;
+        padding-top: 6em;
+        .description{
+          h1{
+            text-align: left;
+          }
+          p{
+            width: 100%;
+            text-align: left;
+          }
+          .steps-grid{
+            grid-template-columns: 80%;
+          }
+        }
+        .video-section{
+          flex-direction: column;
+          padding: 0;
+          margin: 10vh 0;
+          .pattern-video{
+
+          }
+          .video-container{
+            width: 100%;
+            height: 240px;
+          }
+        }
+    }
+
+    .orange-blob{
+        width: 100px;
+    }
+}

@@ -1,0 +1,158 @@
+.blob{
+  span {
+    display: block;
+    position: absolute;
+    bottom: -20vh;
+    left: 0;
+    width: 20em;
+    height: 20em;
+  }
+
+  span.spin {
+    animation: spin 7s linear infinite;
+  }
+
+  span.spin-reverse {
+    animation: spin-pulse-reverse 20s linear infinite;
+  }
+
+  span.pulse {
+    animation: spin-pulse 30s linear infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotateZ(0);
+    }
+    100% {
+      transform: rotateZ(360deg);
+    }
+  }
+
+  @keyframes spin-pulse {
+    0% {
+      transform: scale(1) rotateZ(0);
+    }
+    50% {
+      transform: scale(0.9) rotateZ(180deg);
+    }
+    100% {
+      transform: scale(1) rotateZ(360deg);
+    }
+  }
+
+  @keyframes spin-pulse-reverse {
+    0% {
+      transform: scale(1) rotateZ(0);
+    }
+    50% {
+      transform: scale(0.9) rotateZ(-180deg);
+    }
+    100% {
+      transform: scale(1) rotateZ(-360deg);
+    }
+  }
+
+  .circle {
+    border-radius: 50%;
+    left: calc(50% - 10.25em);
+    top: calc(50% - 12.5em);
+    transform-origin: 50% 12.5em;
+    z-index: 500;
+  }
+
+  .squircle {
+    border-radius: 25%;
+  }
+
+  .circle, .squircle {
+    width: 16em;
+    height: 16em;
+    position: absolute;
+    border-top: 0.1em solid rgba(255,255,255,0.4);
+  }
+
+  .large.circle {
+    box-shadow: -0.25em 0.25em 0.5em rgba(0,0,0,0.15);
+  }
+
+  .small {
+    width: 4em;
+    height: 4em;
+    left: calc(50% - 2em);
+    top: calc(50% - 15em);
+    transform-origin: 50% 15em;
+    box-shadow: 0 0.25em 0.5em rgba(0,0,0,0.2);
+  }
+
+  .small2 {
+    width: 7em;
+    height: 7em;
+    left: calc(50% - 1em);
+    top: calc(50% - 15em);
+    transform-origin: 50% 15em;
+    box-shadow: 0 0.25em 0.5em rgba(0,0,0,0.2);
+  }
+
+  .one {
+    background: rgba(245, 163, 32, 0.8);
+    transform: rotateZ(225deg);
+  }
+
+  .five {
+    background: rgba(164, 195, 62, 0.7);
+    transform: rotateZ(45deg);
+  }
+
+  .small.squircle {
+    background: none;
+    box-shadow: none;
+
+    &::after {
+      content: "";
+      border-radius: 25%;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      background: rgba(245, 163, 32, 0.8);
+      transform: rotateZ(-45deg);
+      box-shadow: -0.25em 0.25em 0.5em rgba(0,0,0,0.2);
+    }
+  }
+
+  .large.squircle {
+    position: absolute;
+    mix-blend-mode: multiply;
+    background: rgba(164, 195, 62, 0.7);
+    border: none;
+    left: calc(50% - 7.5em);
+    top: calc(50% - 7.5em);
+    width: 20em;
+    height: 20em;
+    transform: none;
+    z-index: 100;
+
+    &.one {
+      transform: rotateZ(-45deg);
+    }
+  }
+}
+
+@media only screen and (max-width: 768px){
+  .blob{
+    span{
+      bottom: -15vh;
+    }
+  }
+}
+
+@media only screen and (max-width: 550px){
+  .blob{
+    opacity: 0.3;
+    z-index: -1;
+    span{
+      bottom: -30vh;
+      left: -30vw;
+    }
+  }
+}

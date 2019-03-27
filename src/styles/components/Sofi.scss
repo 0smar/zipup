@@ -1,33 +1,41 @@
 .sofi-section{
-    width: 100%;
-    min-height: 50vh;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .sofi-faces{
     display: flex;
-    justify-content: space-between;
+    width: 100%;
+    justify-content: space-around;
     align-items: center;
-    .sofi-faces{
-        width: 40%;
-        img{
-            width: 100%;
-        }
+    margin: 4em 0;
+    .face{
+      width: 200px;
+      transition: all 0.2s ease-in-out;
+      img{
+        width: 100%;
+      }
+      &:hover{
+        transform: scale(1.2) translateY(-15px);
+      }
     }
+  }
     .description{
-        width: 45%;
+        width: 100%;
         ul{
             display: flex;
             list-style: none;
             margin-left: 0;
             li{
-                margin-left: 1.5em;
+                margin-left: 4em;
                 display: flex;
                 align-items: center;
                 &:first-of-type{
                     margin-left: 0;
                 }
-                &::before{
-                    content: "•";
-                    color: var(--orange);
-                    font-size: 40px;
-                    margin-right: 5px;
+                h1{
+                  margin-right: 0.3em;
                 }
             }
         }
@@ -43,28 +51,34 @@
 
 @media only screen and (max-width: 1024px){
     .sofi-section{
-        min-height: auto;
-        .description{
-            ul{
-                flex-direction: column;
-                li{
-                    margin-left: 0;
-                }
-            }
-        }
-
+      min-height: 80vh;
     }
+}
+
+@media only screen and (max-width: 768px){
+  .sofi-section{
+    .description{
+      .w50{
+        width: 75%;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 550px){
     .sofi-section{
-        min-height: auto;
         flex-direction: column;
         margin-top: 4em;
+        padding-bottom: 13vh;
         .description{
             width: 100%;
             margin-top: 3em;
+            .w50{
+              width: 100%;
+            }
             ul{
+              width: 40%;
+              margin: 0 auto;
                 flex-direction: column;
                 li{
                     margin-left: 0;
@@ -72,13 +86,13 @@
             }
         }
         .sofi-faces{
-            width: 80%;
+            width: 100%;
             margin-top: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+            .face{
+              width: 47%;
+            }
         }
-
-    }
-
-    .faces-bg{
-        width: 100%;
     }
 }

@@ -1,37 +1,23 @@
 import React from 'react'
-import sofi from '../images/sofi.png'
-import appstore from '../images/appstore.png'
-import playstore from '../images/googleplay.png'
+import SofiWink from '../images/SofiWink.svg'
 
 const Newsletter = () => (
-  <div className="register-section" id="comienza">
-    <div className="invite">
-      <div className="header">
-        <div className="bubble bubble__right bubble__right--orange">
-          ¿Listo para cambiar tu vida?
-        </div>
-      </div>
-    </div>
-    <div className="newsletter">
-      <div className="column-container">
-        <p className="description">
-          Sé el primero en enterarte de las últimas noticias sobre ZipUp además de tips que te ayudarán a tener una vida más sana.
-        </p>
+  <div className="register-section" id="start">
+    <div className="squircle" />
+    <div className="circle" />
+    <div className="content">
+      <div className="form-content">
+        <h1>¡Cambia tu vida <span className="highlight-text">ahora</span>!</h1>
+        <p>Entérate de las últimas noticias y sé de los primeros en tener a Sofi en su celular.</p>
         <form name="contact" method="POST" data-netlify="true">
+          <input type="text" name="name" placeholder="¿Cómo te llamas?" />
           <input type="email" name="email" placeholder="Ingresa tu correo electrónico" />
-          <button type="submit">Enviar</button>
+          <button className="button action-button" type="submit">Enviar</button>
         </form>
-        {/* <div className="stores">
-          <h3>PRÓXIMAMENTE</h3>
-          <div className="store-img">
-            <img src={appstore} alt="" />
-            <img src={playstore} alt=""/>
-          </div>
-        </div> */}
       </div>
-      <img src={sofi} alt="Sofi te invita" />
+      <img src={SofiWink} className="sofi-wink" alt="Sofi está lista para ayudarte"/>
     </div>
   </div>
 )
 
-export default Newsletter
+export default Newsletter;

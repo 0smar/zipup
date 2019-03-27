@@ -1,6 +1,6 @@
 /* FONTS */
 
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,500,700');
 
 /* VARIABLES */
 
@@ -17,24 +17,47 @@
 
 @import 'components/buttons';
 @import 'components/containers';
-@import 'components/section-1';
-@import 'components/section-2';
-@import 'components/section-3';
-@import 'components/section-4';
-@import 'components/section-5';
-@import 'components/section-6';
+@import 'components/Intro';
+@import 'components/About';
+@import 'components/Sofi';
+@import 'components/Press';
+@import 'components/Newsletter';
 @import 'components/footer';
+@import 'components/blob';
 
 /* STYLES */ 
 
 body{
-    font-family: 'Roboto', sans-serif;
-    color: var(--text);
-    position: relative;
-    overflow: hidden;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: var(--text);
+  position: relative;
+  overflow: hidden;
+}
+
+.content{
+  width: 95%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.highlight-text{
+  //color: var(--orange);
+  background: linear-gradient(to right, #EC6016, #F5A320);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .green{
   color: var(--green);
   font-size: 30px;
+}
+
+.bg-pattern{
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  width: 90%;
+  opacity: 0.5;
 }

@@ -1,23 +1,23 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
-import styled from 'styled-components'
 
 import Header from '../components/header';
-import Newsletter from '../components/newsletter';
-import Footer from '../components/footer';
+import Footer from '../components/Footer';
+
+import pattern from '../images/pattern.svg'
+
 import './index.scss';
 import '../styles/main.scss';
+import 'smooth-scroll';
 
 import favicon from '../images/favicon.png'
 
-const YieldContent = styled.div`
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  padding: 0 6%;
-  margin-bottom: 1.45rem;
-`
+if (typeof window !== 'undefined') {
+  // Make scroll behavior of internal links smooth
+  // eslint-disable-next-line global-require
+  require('smooth-scroll')('a[href*="#"]');
+}
 
 const Layout = ({ children, data }) => (
   <div>
@@ -32,10 +32,10 @@ const Layout = ({ children, data }) => (
       ]}
     />
     <Header siteTitle={data.site.siteMetadata.title} />
-    <YieldContent>
+    <div>
+      <img src={pattern} alt="green figure" className="bg-pattern" />
       {children()}
-    </YieldContent>
-    <Newsletter />
+    </div>
     <Footer />
   </div>
 )

@@ -10,7 +10,9 @@ const HeaderWrapper = styled.div`
   align-items: center;
   width: 100%;
   padding: 0 4%;
-  margin-bottom: 1.45rem;
+  @media only screen and (max-width: 550px){
+    padding: 0 2%;
+  }
 `
 
 const HeaderLogo = styled.div`
@@ -22,6 +24,13 @@ const HeaderLogo = styled.div`
       width: 200px;
       margin-bottom: 0;
     }
+  }
+  @media only screen and (max-width: 550px){
+      a{
+        img{
+          width: 180px;
+        }
+      }
   }
 `
 
@@ -57,10 +66,10 @@ const Header = ({ siteTitle }) => (
     </HeaderLogo>
 
     <HeaderLinks>
-      <Link to="#conocenos">Conócenos</Link>
-      <Link to="#sofi">Sofi</Link>
-      <Link to="#prensa">Prensa</Link>
-      <Link to="#comienza" className="bubble bubble__right bubble__right--orange">Comienza</Link>
+      <a href="#about">Conócenos</a>
+      <a href="#sofi">Sofi</a>
+      <a href="#press">Prensa</a>
+      <a href="#start" className="button action-orange">Comienza</a>
     </HeaderLinks>
   </HeaderWrapper>
 )

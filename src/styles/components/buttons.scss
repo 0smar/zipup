@@ -1,23 +1,33 @@
-@mixin bubble-color {
-    &--orange{
-        background-color: var(--orange);
-    }
-    &--green{
-        background-color: var(--green);
-    }
+.button{
+    padding: 10px 30px;
+    border-radius: 24px;
+    color: #fff !important;
+    text-decoration: none;
+    font-weight: 500;
 }
 
-.bubble{
-    padding: 10px 30px;
-    border-radius: 14px;
-    color: #fff !important;
-    &__right{
-        border-bottom-left-radius: 0px !important;
-        @include bubble-color;
-    }
+.action-button{
+  background: #A4C33E;
+  background: -webkit-linear-gradient(to right, #A4C33E, #BDE637);
+  background: linear-gradient(to right, #A4C33E, #BDE637);
+  transition: all 0.3s ease;
+  display: inline-block;
 
-    &__left{
-        border-bottom-right-radius: 0px !important;
-        @include bubble-color;
-    }
+  &:hover{
+    box-shadow: 0px 4px 4px rgba(164, 195, 62, 0.3);
+    transform: translateY(-6px);
+  }
+}
+
+.action-orange{
+  background: #F5A320;
+  background: -webkit-linear-gradient(to right, #F5A320, #EC6016);
+  background: linear-gradient(to right, #F5A320, #EC6016);
+  transition: all 0.3s ease;
+  display: inline-block;
+
+  &:hover{
+    box-shadow: 0px 4px 4px rgba(245, 163, 32, 0.4);
+    transform: translateY(-6px);
+  }
 }
