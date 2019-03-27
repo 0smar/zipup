@@ -1,10 +1,9 @@
 import React from 'react'
 
-import Intro from '../components/Intro.js';
-import About from '../components/About.js';
-import MeetSofi from '../components/Sofi.js';
-import Press from '../components/Press.js';
-import Newsletter from '../components/Newsletter.js';
+import Intro from '../components/Intro';
+import About from '../components/About';
+import MeetSofi from '../components/Sofi';
+import Press from '../components/Press';
 
 const IndexPage = () => (
   <div className="column-container">
@@ -13,7 +12,6 @@ const IndexPage = () => (
     <About />
     <MeetSofi />
     <Press />
-    <Newsletter />
 
   </div>
 )

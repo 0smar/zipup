@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 
 import Header from '../components/header';
-import Footer from '../components/Footer';
 
 import pattern from '../images/pattern.svg'
 
@@ -36,7 +35,6 @@ const Layout = ({ children, data }) => (
       <img src={pattern} alt="green figure" className="bg-pattern" />
       {children()}
     </div>
-    <Footer />
   </div>
 )
 
