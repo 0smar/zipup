@@ -4,6 +4,7 @@ import Intro from '../components/Intro';
 import About from '../components/About';
 import MeetSofi from '../components/Sofi';
 import Press from '../components/Press';
+import Newsletter from '../components/Newsletter';
 
 const IndexPage = () => (
   <div className="column-container">
@@ -12,6 +13,7 @@ const IndexPage = () => (
     <About />
     <MeetSofi />
     <Press />
+    <Newsletter />
 
   </div>
 )
