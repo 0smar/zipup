@@ -109,6 +109,9 @@
 
 @media only screen and (max-width: 550px){
   .intro-section{
+    .scroll-label{
+      display: none;
+    }
     .description{
       width: 95%;
       flex-direction: column;
