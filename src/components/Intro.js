@@ -1,5 +1,5 @@
 import React from 'react';
-import Link from 'gatsby-link';
+import { Link, animateScroll as scroll } from "react-scroll";
 
 import Blob from '../components/Blob';
 
@@ -19,7 +19,15 @@ const Intro = () => (
           Conoce a Sofi, la asistente nutricional que te dará información indicada al momento sobre lo que comes y cómo alcanzar tus objetivos.
         </p>
         <div className="row-container w100 aic">
-          <a href="https://facebook.com/zipupapp" className="button action-button" target="_blank">Habla con Sofi</a>
+          <Link 
+            to="start" 
+            className="button action-button" 
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={1500}>
+            Descarga la App
+          </Link>
           <div className="social-media">
             <a href="https://facebook.com/zipupapp" target="_blank">
               <img src={Facebook} alt="ZipUp Twitter" />

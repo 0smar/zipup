@@ -8,7 +8,7 @@ const Newsletter = () => (
     <div className="content">
       <div className="form-content">
         <h1>¡Cambia tu vida <span className="highlight-text">ahora</span>!</h1>
-        <p>Entérate de las últimas noticias y sé de los primeros en tener a Sofi en su celular.</p>
+        <p>Regístrate para ser de los primeros en poder descargar la app, te noficaremos muy pronto cuando esté disponible.</p>
         <form name="contact" method="POST" data-netlify="true">
           <input type="text" name="name" placeholder="¿Cómo te llamas?" />
           <input type="email" name="email" placeholder="Ingresa tu correo electrónico" />
